@@ -5,10 +5,10 @@ The PresentationSession interface of the Presentation API provides methods and p
 ## Properties
 
 <dl>
-  <dt>PresentationSession.id</dt>
-  <dd></dd>
-  <dt>PresentationSession.state</dt>
-  <dd></dd>
+  <dt>PresentationSession.id {{readonlyInline}}</dt>
+  <dd>Provides the presentation session identifier.</dd>
+  <dt>PresentationSession.state {{readonlyInline}}</dt>
+  <dd>Returns either connected or disconnected.</dd>
   <dt>PresentationSession.binaryType</dt>
   <dd></dd>
 </dl>
