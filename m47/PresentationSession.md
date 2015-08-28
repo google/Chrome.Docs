@@ -10,7 +10,7 @@ The PresentationSession interface of the Presentation API provides methods and p
   <dt>PresentationSession.state {{readonlyInline}}</dt>
   <dd>Returns either connected or disconnected.</dd>
   <dt>PresentationSession.binaryType</dt>
-  <dd></dd>
+  <dd>Returns either blob or arrayBuffer</dd>
 </dl>
 
 ### Event handlers
