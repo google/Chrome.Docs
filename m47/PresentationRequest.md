@@ -17,11 +17,11 @@ None
 
 <dl>
   <dt>PresentationRequest.start()</dt>
-  <dd>TBD</dd>
+  <dd>Returns a {{jsxref("Promise")}} that resolves to a new <PresentationSession.md> object.</dd>
   <dt>PresentationRequest.join()</dt>
-  <dd>TBD</dd>
+  <dd>Returns a {{jsxref("Promise")}} that resolves to an existing <PresentationSession.md> object specified by a given presentationId.</dd>
   <dt>PresentationAvailability.getAvailability()</dt>
-  <dd>TBD</dd>
+  <dd>Returns a {{jsxref("Promise")}} that resolves to a <PresentationAvailability.md> object which provides availability information for the given presentationId.</dd>
 </dl>
 
 ## Specifications
