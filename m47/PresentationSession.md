@@ -17,18 +17,18 @@ The PresentationSession interface of the Presentation API provides methods and p
 
 <dl>
   <dt>PresentationSession.onstatechange</dt>
-  <dd></dd>
+  <dd>Indicates that the value of PresentationSession.state has changed.</dd>
   <dt>PresentationSession.onmessage</dt>
-  <dd></dd>
+  <dd>Fired when ther is a call to PresentationSession.send(). </dd>
 </dl>
 
 ## Methods
 
 <dl>
   <dt>PresentationSession.close()</dt>
-  <dd></dd>
+  <dd>Closes the current session and fires PresentationSession.onstatechange.</dd>
   <dt>PresentationSession.send()</dt>
-  <dd></dd>
+  <dd>Sends either binary or text data between a controlling browsing context and a presenting browsing context.</dd>
 </dl>
 
 ## Specifications
