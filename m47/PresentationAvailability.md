@@ -6,15 +6,19 @@ The PresentationAvailability interface of the [Presentation API](presentation_ap
 
 <dl>
   <dt>value {{readonlyinline}}</dt>
-  <dd>TBD</dd>
+  <dd>A boolean value indicating whether the given presentation display is available.</dd>
 </dl>
 
 ### Event handlers
 
 <dl>
   <dt>onchange</dt>
-  <dd>TBD></dd>
+  <dd>Indicates that the availability of the presentation display has changed.</dd>
 </dl>
+
+## Methods
+
+None.
 
 ## Specifications
 
