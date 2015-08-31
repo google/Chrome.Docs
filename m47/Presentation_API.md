@@ -8,13 +8,13 @@
   <dt>[Presentation](Presentation.md)</dt>
   <dd>A navigator interface that provides access to PresentationSessions</dd>
   <dt>[PresentationSession](PresentationSession.md)</dt>
-  <dd>TBD</dd>
+  <dd>An interface for controlling a single presentation.</dd>
   <dt>[PresentationAvailability](PresentationAvailability.md)</dt>
   <dd>TBD</dd>
   <dt>[PresentationRequest](PresentationRequest.md)</dt>
   <dd>TBD</dd>
   <dt>[PresentationSessionConnectEvent](PresentationSessionConnectEvent)</dt>
-  <dd>TBD</dd>
+  <dd>Fired on a PresentationRequest when a session associated with the object is created.</dd>
 </dl>
 
 ## Specifications
