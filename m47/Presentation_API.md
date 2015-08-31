@@ -8,7 +8,7 @@
   <dt>[Presentation](Presentation.md)</dt>
   <dd>A navigator interface that provides access to PresentationSessions</dd>
   <dt>[PresentationSession](PresentationSession.md)</dt>
-  <dd>An interface for controlling a single presentation.</dd>
+  <dd>Provides methods and properties for managing a single presentation</dd>
   <dt>[PresentationAvailability](PresentationAvailability.md)</dt>
   <dd>TBD</dd>
   <dt>[PresentationRequest](PresentationRequest.md)</dt>
