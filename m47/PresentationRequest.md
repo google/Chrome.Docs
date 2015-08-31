@@ -1,5 +1,7 @@
 # PresentationRequest
 
+The PresentationRequest interface of the [Presentation API](Presentation_API.md) provides methods for starting a new presentation or joining an active one.
+
 ## Properties
 
 None
@@ -8,7 +10,7 @@ None
 
 <dl>
   <dt>onsessionconnect</dt>
-  <dd>TBD</dd>
+  <dd>Fires on a successful call to PresentationRequest.start() or PresentationRequest.join(). This method provides a <PresentationSessionConnectEvent.md> object with a reference to the created or joined <PresentationSession.md> object.</dd>
 </dl>
 
 ## Methods
