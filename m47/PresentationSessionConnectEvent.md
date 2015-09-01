@@ -5,7 +5,7 @@
 <dl>
   <dt><a href="PresentationSessionConnectionEventInit.md">PresentationSessionConnectionEvent.PresentationSessionConnectionEvent()</a></dt>
   <dd>TBD</dd>
-</dt>
+</dl>
 
 ## Properties
 
