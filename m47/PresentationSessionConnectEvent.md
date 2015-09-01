@@ -1,5 +1,7 @@
 # PresentationSessionConnectionEvent
 
+The PresentationSessionConnectionEvent interface of the [Presentation API](Presentation_API.md) is fired on a [PresentationRequest](PresentationRequest.md) when a session associated with the object is created. 
+
 ## Constructor
 
 <dl>
