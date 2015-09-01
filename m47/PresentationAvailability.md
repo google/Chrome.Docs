@@ -1,6 +1,6 @@
 # PresentationAvailability
 
-The PresentationAvailability interface of the [Presentation API](presentation_api.md) provides information on the availability of a presentation display.
+The PresentationAvailability interface of the [Presentation API](Presentation_API.md) provides information on the availability of a presentation display.
 
 ## Properties
 
