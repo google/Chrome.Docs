@@ -4,14 +4,14 @@
 
 <dl>
   <dt><a href="PresentationSessionConnectionEventInit.md">PresentationSessionConnectionEvent.PresentationSessionConnectionEvent()</a></dt>
-  <dd>TBD</dd>
+  <dd>Crestes a new PresentationSessionConnectionEvent.</dd>
 </dl>
 
 ## Properties
 
 <dl>
   <dt>PresentationSessionConnectionEvent.session</dt>
-  <dd>TBD</dd>
+  <dd>Returns a references to the <a href="PresentationSession.md">PresentationSession</a> object that fired the event.</dd>
 </dl>
 
 ## Specifications
