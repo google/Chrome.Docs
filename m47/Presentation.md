@@ -13,7 +13,7 @@ The Presentation interface of the [Presentation API](presentation_api.md) provid
 
 <dl>
   <dt>Presentation.onsessionavailable</dt>
-  <dd>TBD</dd>
+  <dd>Fired when a new <a href="PresentationSession.md">PresentationSession</a> becomes available.</dd>
 </dl>
 
 ## Methods
