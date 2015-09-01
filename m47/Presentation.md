@@ -1,6 +1,6 @@
 # Presentation
 
-The Presentation interface of the [Presentation API](presentation_api.md) provides access to presentation sessions. 
+The Presentation interface of the [Presentation API](Presentation_API.md) provides access to presentation sessions. 
 
 ## Properties
 
