@@ -5,15 +5,15 @@
 ## Interfaces
 
 <dl>
-  <dt>[Presentation](Presentation.md)</dt>
+  <dt><a href="Presentation.md">Presentation</a></dt>
   <dd>A navigator interface that provides access to PresentationSessions</dd>
-  <dt>[PresentationSession](PresentationSession.md)</dt>
+  <dt><a href="PresentationSession.md">PresentationSession</a></dt>
   <dd>Provides methods and properties for managing a single presentation</dd>
-  <dt>[PresentationAvailability](PresentationAvailability.md)</dt>
-  <dd>TBD</dd>
-  <dt>[PresentationRequest](PresentationRequest.md)</dt>
-  <dd>TBD</dd>
-  <dt>[PresentationSessionConnectEvent](PresentationSessionConnectEvent)</dt>
+  <dt><a href="PresentationAvailability.md">PresentationAvailability</a></dt>
+  <dd>Indicates the availabiltiy of an external screen available to the user agent via an implementation specific connection</dd>
+  <dt><a href="PresentationRequest.md">PresentationRequest</a></dt>
+  <dd>Provides methods for starting a new presentation or joining an active one.</dd>
+  <dt><a href="PresentationSessionConnectEvent.md">PresentationSessionConnectEvent</a></dt>
   <dd>Fired on a PresentationRequest when a session associated with the object is created.</dd>
 </dl>
 
