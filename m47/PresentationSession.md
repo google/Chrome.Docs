@@ -1,6 +1,6 @@
 # PresentationSession
 
-The PresentationSession interface of the Presentation API provides methods and properties for managing a single presentation.
+The PresentationSession interface of the [Presentation API](Presentation_API.md) provides methods and properties for managing a single presentation.
 
 ## Properties
 
