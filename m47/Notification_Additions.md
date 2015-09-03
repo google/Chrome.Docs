@@ -4,4 +4,4 @@ The following additions will be made to the [appropriate MDN page](https://devel
 
 ## options
 
-actions: An array of NotificationAction objects.
+`requireInteraction`: Indicates that on devices with sufficiently large screens, a notification should remain active until the user clicks or dismisses it. If this value is absent or false, the desktop version of Chrome will auto-minimize notifications after approximately eight seconds. The default value is `false`.
