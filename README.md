@@ -5,3 +5,11 @@ This repo contains drafts for content that will be moved to MDN when particular 
 
 - **[M47 dev/canary](m47/)** - Items tentatively scheduled for release in Chrome 47.
 - **[backlog](backlog/)** - Items that were previously slated for a Chrome release but have been deprioritized. This folder is not intended to correspond to the statuses 'No active development', 'Proposed', or 'In development' on the dashboard. This is simply a place to dump drafts that have been deprioritized.
+
+Contributing
+------------
+
+Web Fundamentals is an open source project and we welcome your contributions!
+Before submitting a pull request, please review [CONTRIBUTING.md](CONTRIBUTING.md)
+and make sure that there is an issue filed describing the fix or new content.
+If you don't complete these steps, we won't be able to accept your pull request, sorry.
