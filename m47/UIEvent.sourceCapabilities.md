@@ -4,4 +4,4 @@ The `UIEvent.sourceCapabilities` read-only property returns an instance of the [
 
 # Syntax
 
-`var *iDC* = *event*.sourceCapabilities`
+`var `*iDC*` = `*event*`.sourceCapabilities`
