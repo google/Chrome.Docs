@@ -8,7 +8,7 @@ The `PresentationSessionConnectionEvent()` constructor creates a new [Presentati
 
 ### Returns
 
-An instance of the [PresentationSessionConnectEvent](PresentationSessionConnectEvent.md) interface.
+An instance of the [PresentationSessionConnectionEvent](PresentationSessionConnectionEvent.md) interface.
 
 ### Parameters
 
