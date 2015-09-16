@@ -27,4 +27,4 @@ The Presentation interface of the [Presentation API](Presentation_API.md) provid
 
 ## Specifications
 
-<http://w3c.github.io/presentation-api/>
+<http://w3c.github.io/presentation-api/#interface-presentation>
