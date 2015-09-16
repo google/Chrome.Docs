@@ -1,11 +1,11 @@
-# PresentationSessionConnectionEvent
+# PresentationSessionConnectEvent
 
-The PresentationSessionConnectionEvent interface of the [Presentation API](Presentation_API.md) is fired on a [PresentationRequest](PresentationRequest.md) when a session associated with the object is created. 
+The PresentationSessionConnectEvent interface of the [Presentation API](Presentation_API.md) is fired on a [PresentationRequest](PresentationRequest.md) when a session associated with the object is created. 
 
 ## Constructor
 
 <dl>
-  <dt><a href="PresentationSessionConnectionEventInit.md">PresentationSessionConnectionEvent.PresentationSessionConnectionEvent()</a></dt>
+  <dt><a href="PresentationSessionConnectEvent_Constructor.md">PresentationSessionConnectEvent()</a></dt>
   <dd>Crestes a new PresentationSessionConnectionEvent.</dd>
 </dl>
 
