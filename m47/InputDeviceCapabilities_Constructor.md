@@ -8,7 +8,7 @@ The `InputDeviceCapabilities()` constructor creates a new [InputDeviceCapabiliti
 
 ### Returns
 
-An instance of of the [InputDeviceCapabilities](InputDeviceCapabilities.md) interface.
+An instance of the [InputDeviceCapabilities](InputDeviceCapabilities.md) interface.
 
 ### Parameters
 
