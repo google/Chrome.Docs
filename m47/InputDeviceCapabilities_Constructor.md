@@ -14,7 +14,7 @@ An instance of of the [InputDeviceCapabilities](InputDeviceCapabilities.md) inte
 
 <dl>
   <dt>InputDeviceCapabilitiesInit {{optional_inline}}</dt>
-  <dd></dd>
+  <dd>A dictionary object containing a set of device capabilities.</dd>
 </dl>
 
 ## Example
