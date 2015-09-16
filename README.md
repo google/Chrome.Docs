@@ -1,5 +1,5 @@
 # Chrome.Docs
-Temporary documentation for developer features in the Chrome beta, canary, and dev channels.
+Draft documentation for developer features in the Chrome beta, canary, and dev channels.
 
 This repo contains drafts for content that will be moved to MDN when particular versions of Chrome reach stable. Consequently, It's organized with separate directories correspoonding to certain lables on [chromestatus.com](https://www.chromestatus.com/). The current directories are:
 
