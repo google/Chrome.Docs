@@ -20,9 +20,9 @@ The Presentation interface of the [Presentation API](Presentation_API.md) provid
 
 <dl>
   <dt>Presentation.getSession()</dt>
-  <dd>Returns a {{jsxref("Promise")}} that resolves to a <a href="PresntationSession.md">PresentationSession</a> interface.</dd>
+  <dd>Returns a {{jsxref("Promise")}} that resolves to a <a href="PresentationSession.md">PresentationSession</a> interface.</dd>
   <dt>Presentation.getSessions()</dt>
-  <dd>Returns a {{jsxref("Promise")}} that resolves to a list of <a href="PresntationSession.md">PresentationSession</a> interfaces.</dd>
+  <dd>Returns a {{jsxref("Promise")}} that resolves to a list of <a href="PresentationSession.md">PresentationSession</a> interfaces.</dd>
 </dl>
 
 ## Specifications
