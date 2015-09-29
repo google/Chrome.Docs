@@ -14,7 +14,7 @@ An unsighned long integer that can be used to cancle the callback.
 
 <dl>
   <dt>`callback`</dt>
-  <dd>A reference to a function that will be called during a browser's idle period.</dd>
+  <dd>A reference to a function that will be called during a browser's idle period. The callback function must implement the IdleDeadline interface.</dd>
   <dt>`options` {{optional_inline}}</dt>
   <dd>Contains optional configuration parameters. It has the following property:
     <ul>
