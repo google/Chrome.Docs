@@ -1,6 +1,6 @@
 # Window.requestIdleCallback()
 
-The *`Window.requestIdleCallback()`* method enables the scheduling of tasks during a browser's idle periods. This enables developers to perform background work on the main event loop, without impacting latency-critical events such as animation and input response.
+The **`Window.requestIdleCallback()`** method enables the scheduling of tasks during a browser's idle periods. This enables developers to perform background work on the main event loop, without impacting latency-critical events such as animation and input response.
 
 ## Syntax
 
