@@ -5,7 +5,7 @@ The PresentationConnectionAvailableEvent  interface of the [Presentation API](Pr
 ## Constructor
 
 <dl>
-  <dt><a href="PresentationConnectionAvailableEvent _Constructor.md">PresentationConnectionAvailableEvent()</a></dt>
+  <dt><a href="PresentationConnectionAvailableEvent_Constructor.md">PresentationConnectionAvailableEvent()</a></dt>
   <dd>Crestes a new PresentationConnectionAvailableEvent.</dd>
 </dl>
 
