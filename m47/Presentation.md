@@ -1,6 +1,6 @@
 # Presentation
 
-The Presentation interface of the [Presentation API](Presentation_API.md) provides access to presentation sessions. 
+The Presentation interface of the [Presentation API](Presentation_API.md) provides access to presentation connections. 
 
 ## Properties
 
@@ -12,17 +12,17 @@ The Presentation interface of the [Presentation API](Presentation_API.md) provid
 ### Event handlers
 
 <dl>
-  <dt>Presentation.onsessionavailable</dt>
-  <dd>Fired when a new <a href="PresentationSession.md">PresentationSession</a> becomes available.</dd>
+  <dt>Presentation.onconnectionavailable</dt>
+  <dd>Fired when a new <a href="PresentationConnection.md">PresentationConnection</a> becomes available.</dd>
 </dl>
 
 ## Methods
 
 <dl>
-  <dt>Presentation.getSession()</dt>
-  <dd>Returns a {{jsxref("Promise")}} that resolves to a <a href="PresentationSession.md">PresentationSession</a> interface.</dd>
-  <dt>Presentation.getSessions()</dt>
-  <dd>Returns a {{jsxref("Promise")}} that resolves to a list of <a href="PresentationSession.md">PresentationSession</a> interfaces.</dd>
+  <dt>Presentation.getConnection()</dt>
+  <dd>Returns a {{jsxref("Promise")}} that resolves to a <a href="PresentationConnection.md">PresentationConnection</a> interface.</dd>
+  <dt>Presentation.getConnections()</dt>
+  <dd>Returns a {{jsxref("Promise")}} that resolves to a list of <a href="PresentationConnection.md">PresentationConnection</a> interfaces.</dd>
 </dl>
 
 ## Specifications

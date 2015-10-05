@@ -6,7 +6,7 @@ The PresentationConnection interface of the [Presentation API](Presentation_API.
 
 <dl>
   <dt>PresentationConnection.id {{readonlyInline}}</dt>
-  <dd>Provides the presentation session identifier.</dd>
+  <dd>Provides the presentation connection identifier.</dd>
   <dt>PresentationConnection.state {{readonlyInline}}</dt>
   <dd>Returns either connected or disconnected.</dd>
   <dt>PresentationConnection.binaryType</dt>
@@ -26,7 +26,7 @@ The PresentationConnection interface of the [Presentation API](Presentation_API.
 
 <dl>
   <dt>PresentationConnection.close()</dt>
-  <dd>Closes the current session and fires PresentationConnection.onstatechange.</dd>
+  <dd>Closes the current connection and fires PresentationConnection.onstatechange.</dd>
   <dt>PresentationConnection.send()</dt>
   <dd>Sends either binary or text data between a controlling browsing context and a presenting browsing context.</dd>
 </dl>
