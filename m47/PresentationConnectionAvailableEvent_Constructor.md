@@ -1,6 +1,6 @@
 # PresentationConnectionAvailableEvent()
 
-The `PresentationConnectionAvailableInit()` constructor creates a new [PresentationConnectionAvailableEvent ](PresentationConnectionAvailableEvent .md) is fired on a [PresentationRequest](PresentationRequest.md) when a connection associated with the object is created.
+The `PresentationConnectionAvailableInit()` constructor creates a new [PresentationConnectionAvailableEvent ](PresentationConnectionAvailableEvent.md) is fired on a [PresentationRequest](PresentationRequest.md) when a connection associated with the object is created.
 
 ## Syntax
 
@@ -8,7 +8,7 @@ The `PresentationConnectionAvailableInit()` constructor creates a new [Presentat
 
 ### Returns
 
-An instance of the [PresentationConnectionAvailableEvent ](PresentationConnectionAvailableEvent .md) interface.
+An instance of the [PresentationConnectionAvailableEvent ](PresentationConnectionAvailableEvent.md) interface.
 
 ### Parameters
 
