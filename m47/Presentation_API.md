@@ -13,7 +13,7 @@
   <dd>Indicates the availabiltiy of an external screen available to the user agent via an implementation specific connection</dd>
   <dt><a href="PresentationRequest.md">PresentationRequest</a></dt>
   <dd>Provides methods for starting a new presentation or joining an active one.</dd>
-  <dt><a href="PresentationConnectionAvailableEvent .md">PresentationConnectionAvailableEvent </a></dt>
+  <dt><a href="PresentationConnectionAvailableEvent.md">PresentationConnectionAvailableEvent</a></dt>
   <dd>Fired on a PresentationRequest when a connection associated with the object is created.</dd>
 </dl>
 
