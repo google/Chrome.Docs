@@ -1,10 +1,10 @@
-# PresentationConnectionAvailableEvent ()
+# PresentationConnectionAvailableEvent()
 
-The `PresentationConnectionAvailableInit ()` constructor creates a new [PresentationConnectionAvailableEvent ](PresentationConnectionAvailableEvent .md) is fired on a [PresentationRequest](PresentationRequest.md) when a connection associated with the object is created.
+The `PresentationConnectionAvailableInit()` constructor creates a new [PresentationConnectionAvailableEvent ](PresentationConnectionAvailableEvent .md) is fired on a [PresentationRequest](PresentationRequest.md) when a connection associated with the object is created.
 
 ## Syntax
 
-`var PresentationConnectionAvailableEvent  = new PresentationConnectionAvailableInit (type, PresentationConnectionAvailableInit)`
+`var PresentationConnectionAvailableEvent  = new PresentationConnectionAvailableInit(type, PresentationConnectionAvailableInit)`
 
 ### Returns
 
