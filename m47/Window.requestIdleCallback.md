@@ -8,7 +8,7 @@ The **`Window.requestIdleCallback()`** method enables the scheduling of tasks du
 
 ### Returns
 
-An unsighned long integer that can be used to cancle the callback using the [cancelIdleCallback()](Window.cancelIdleCallback.md) method.
+An unsigned long integer that can be used to cancel the callback using the [cancelIdleCallback()](Window.cancelIdleCallback.md) method.
 
 ### Parameters
 

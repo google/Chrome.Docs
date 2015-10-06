@@ -1,4 +1,4 @@
-# Window.cancleIdleCallback()
+# Window.cancelIdleCallback()
 
 The **`Window.cancelIdleCallback()`** enables you to cancel a callback previously scheduled with [requestIdleCallback](Window.requestIdleCallback.md).
 
@@ -14,7 +14,7 @@ None.
 
 <dl>
   <dt>`handle`</dt>
-  <dd>The unsighned long integer returned by calling [requestIdleCallback](Window.requestIdleCallback.md).</dd>
+  <dd>The unsigned long integer returned by calling [requestIdleCallback](Window.requestIdleCallback.md).</dd>
 </dl>
 
 ## Requirements
