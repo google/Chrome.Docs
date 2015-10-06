@@ -33,4 +33,4 @@ The PresentationConnection interface of the [Presentation API](Presentation_API.
 
 ## Specifications
 
-<http://w3c.github.io/presentation-api/#interface-presentationsession>
+<http://w3c.github.io/presentation-api/#interface-presentationconnection>
