@@ -18,12 +18,7 @@ The Presentation interface of the [Presentation API](Presentation_API.md) provid
 
 ## Methods
 
-<dl>
-  <dt>Presentation.getConnection()</dt>
-  <dd>Returns a {{jsxref("Promise")}} that resolves to a <a href="PresentationConnection.md">PresentationConnection</a> interface.</dd>
-  <dt>Presentation.getConnections()</dt>
-  <dd>Returns a {{jsxref("Promise")}} that resolves to a list of <a href="PresentationConnection.md">PresentationConnection</a> interfaces.</dd>
-</dl>
+None.
 
 ## Specifications
 
