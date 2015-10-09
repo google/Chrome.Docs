@@ -1,11 +1,15 @@
 # Imput Device Capabilities API
 
+<p class="summary">
+  The InputDeviceCapabilities API provides details about the underlying sources of input events. The API attempts to describe how the device behaves rather than what it is. For example, the first version of the API indicates whether a device fires touch events rather than whether it is a touch screen. 
+</p>
+
 ## Input device capabilities concepts and usage
 
 ## Interfaces
 
 <dl>
-  <dt>[InputDeviceCapabilities](InputDeviceCapabilities.md)</dt>
+  <dt>InputDeviceCapabilities</dt>
   <dd>TBD</dd>
 </dl>
 
