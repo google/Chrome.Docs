@@ -10,7 +10,7 @@
 
 <dl>
   <dt>InputDeviceCapabilities</dt>
-  <dd>TBD</dd>
+  <dd>Provides logical information about an input device.</dd>
 </dl>
 
 ## Specifications
