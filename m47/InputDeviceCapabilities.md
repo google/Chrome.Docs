@@ -1,6 +1,6 @@
 # InputDeviceCapabilities
 
-The `InputDeviceCapabilities` interface provides information about the physical device responsible for generating a touch event.
+The `InputDeviceCapabilities` interface provides logical information about an input device.
 
 ## Constructors
 
