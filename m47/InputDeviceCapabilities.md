@@ -11,8 +11,8 @@ In some instances `InputDeviceCapabilities` represents the capabilities of logic
 ## Properties
 
 <dl>
-  <dt>InputDeviceCapabilities.fireTouchEvents</dt>
-  <dd>Indicates whether the device dispatches touch events.</dd>
+  <dt>InputDeviceCapabilities.fireTouchEvents {{readonlyinline}}</dt>
+  <dd>A {{jsxref("Boolean")}} that indicates whether the device dispatches touch events.</dd>
 </dl>
 
 ## Methods
