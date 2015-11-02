@@ -11,6 +11,15 @@ You can use this property to detect mouse events that represent an action that m
 ### Value
 A {{jsxref('Bopolean')}}
 
+## Example
+
+```javascript
+myButton.addEventListener('mousedown', function(e) {
+  if (!e.sourceCapabilities.firesTouchEvents)
+    myButton.classList.add("pressed");
+});
+```
+
 ## Specifications
 
 http://rbyers.github.io/InputDevice/index.html#dom-inputdevicecapabilities-firestouchevents
