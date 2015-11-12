@@ -23,7 +23,7 @@ An unsigned long integer that can be used to cancel the callback using the [canc
   <dt><code>options</code> {{optional_inline}}</dt>
   <dd>Contains optional configuration parameters. It has the following property:
     <ul>
-      <li><code>timeout<code>: A deadline by which the browser must call the given callback function. This value is given in milliseconds.</li>
+      <li><code>timeout</code>: A deadline by which the browser must call the given callback function. This value is given in milliseconds.</li>
     </ul>
   </dd>
 </dl>
