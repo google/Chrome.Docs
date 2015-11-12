@@ -13,8 +13,8 @@ None.
 ## Parameters
 
 <dl>
-  <dt>`handle`</dt>
-  <dd>The unsigned long integer returned by calling [requestIdleCallback](Window.requestIdleCallback.md).</dd>
+  <dt><code>handle</code></dt>
+  <dd>The unsigned long integer returned by calling <code>requestIdleCallback</code>.</dd>
 </dl>
 
 ## Requirements
