@@ -8,7 +8,7 @@ You can use this property to detect mouse events that represent an action that m
 
 `var boolean = InputDeviceCapabilities.fireTouchEvents`
 
-### Value
+### Returns
 A {{jsxref('Bopolean')}}
 
 ## Example
