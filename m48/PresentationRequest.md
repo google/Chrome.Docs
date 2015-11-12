@@ -18,7 +18,7 @@ None
 <dl>
   <dt>PresentationRequest.start()</dt>
   <dd>Returns a {{jsxref("Promise")}} that resolves to a new <PresentationConnection.md> object.</dd>
-  <dt>PresentationRequest.join()</dt>
+  <dt>PresentationRequest.reconnect()</dt>
   <dd>Returns a {{jsxref("Promise")}} that resolves to an existing <PresentationConnection.md> object specified by a given presentationId.</dd>
   <dt>PresentationRequest.getAvailability()</dt>
   <dd>Returns a {{jsxref("Promise")}} that resolves to a <PresentationAvailability.md> object which provides availability information for the given presentationId.</dd>
