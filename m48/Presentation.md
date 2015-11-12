@@ -8,7 +8,7 @@ The Presentation interface of the [Presentation API](Presentation_API.md) provid
   <dt>Presentation.connection</dt>
   <dd>Returns a refernce to the presentation's PresentationConnection object.</dd>
   <dt>Presentation.defaultRequest</dt>
-  <dd>Returns the default presentation request.</dd>
+  <dd>Returns a refernce to the presentation's PresentationRequest object.</dd>
 </dl>
 
 ## Methods
