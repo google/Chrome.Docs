@@ -4,7 +4,7 @@ The `PresentationConnectionAvailableInit()` constructor creates a new [Presentat
 
 ## Syntax
 
-`var PresentationConnectionAvailableEvent  = new PresentationConnectionAvailableInit(type, PresentationConnectionAvailableInit)`
+`var PresentationConnectionAvailableEvent  = new PresentationConnectionAvailableInit(typeArg, eventInit)`
 
 ### Returns
 
@@ -13,15 +13,11 @@ An instance of the [PresentationConnectionAvailableEvent ](PresentationConnectio
 ### Parameters
 
 <dl>
-  <dt>type</dt>
-  <dd>TBD</dd>
-  <dt>PresentationConnectionAvailableEvent </dt>
-  <dd>TBD</dd>
+  <dt>typeArg</dt>
+  <dd>A [[jsxref("DOMSTring")}} giving the name of the event. For this event it should be `connectionavailable`.</dd>
+  <dt>eventInit</dt>
+  <dd>Is a `PresentationConnectionAvailableInit` dictionary, which only contains a reference to a `PresentationConnection` object. </dd>
 </dl>
-
-## Example
-
-TBD
 
 ## Specifications
 
