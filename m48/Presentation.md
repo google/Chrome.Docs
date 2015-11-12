@@ -5,15 +5,10 @@ The Presentation interface of the [Presentation API](Presentation_API.md) provid
 ## Properties
 
 <dl>
+  <dt>Presentation.connection</dt>
+  <dd>Returns a refernce to the presentation's PresentationConnection object.</dd>
   <dt>Presentation.defaultRequest</dt>
   <dd>Returns the default presentation request.</dd>
-</dl>
-
-### Event handlers
-
-<dl>
-  <dt>Presentation.onconnectionavailable</dt>
-  <dd>Fired when a new <a href="PresentationConnection.md">PresentationConnection</a> becomes available.</dd>
 </dl>
 
 ## Methods
