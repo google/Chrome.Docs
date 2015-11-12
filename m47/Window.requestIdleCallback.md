@@ -13,17 +13,17 @@ An unsigned long integer that can be used to cancel the callback using the [canc
 ### Parameters
 
 <dl>
-  <dt>`callback`</dt>
+  <dt><code>callback</code></dt>
   <dd>A reference to a function that will be called during a browser's idle period. The callback function must take the following parameters:
     <ul>
-      <li>`timeRemaining`: A reference to a method that returns a {{domxref("DOMHighResTimeStamp")}}.</li>
-      <li>`didTimeout`: A boolean that returns true if the callback was invoked by the user agent, and false otherwise.</li>
+      <li><code>timeRemaining</code>: A reference to a method that returns a {{domxref("DOMHighResTimeStamp")}}.</li>
+      <li><code>didTimeout</code>: A boolean that returns true if the callback was invoked by the user agent, and false otherwise.</li>
     </ul>
   </dd>
-  <dt>`options` {{optional_inline}}</dt>
+  <dt><code>options</code> {{optional_inline}}</dt>
   <dd>Contains optional configuration parameters. It has the following property:
     <ul>
-      <li>`timeout`: A deadline by which the browser must call the given callback function. This value is given in milliseconds.</li>
+      <li><code>timeout<code>: A deadline by which the browser must call the given callback function. This value is given in milliseconds.</li>
     </ul>
   </dd>
 </dl>
