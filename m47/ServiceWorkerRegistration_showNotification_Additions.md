@@ -6,4 +6,4 @@ Per the [Notification spec](https://notifications.spec.whatwg.org/#dictdef-notif
 
 ### Options
 
-`requireInteration`: Specifies that the notification remains visible until the user interacts with it. Otherwise, the notification will go away after aproximately eight seconds.
+`requireInteration`: Indicates that on devices with sufficiently large screens, a notification should remain active until the user clicks or dismisses it. If this value is absent or false, the desktop version of Chrome will auto-minimize notifications after approximately eight seconds. The default value is false.
