@@ -12,10 +12,10 @@ The PresentationConnectionAvailableEvent  interface of the [Presentation API](Pr
 ## Properties
 
 <dl>
-  <dt>PresentationConnectionAvailableEvent.connection</dt>
+  <dt>PresentationConnectionAvailableEvent.connection {{readonlyinline}}</dt>
   <dd>Returns a references to the <a href="PresentationConnection.md">PresentationConnection</a> object that fired the event.</dd>
 </dl>
 
 ## Specifications
 
-<http://w3c.github.io/presentation-api/>
+<https://w3c.github.io/presentation-api/#interface-presentationconnectionavailableevent>
