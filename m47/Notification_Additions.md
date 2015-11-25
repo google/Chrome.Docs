@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # Notification.Notification()
 
 The following additions will be made to the [appropriate MDN page](https://developer.mozilla.org/en-US/docs/Web/API/notification/Notification):

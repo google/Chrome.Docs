@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # Window.cancelIdleCallback()
 
 The **`Window.cancelIdleCallback()`** enables you to cancel a callback previously scheduled with [requestIdleCallback](Window.requestIdleCallback.md).

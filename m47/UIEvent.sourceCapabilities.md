@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # UIEvent.sourceCapabilities
 
 The `UIEvent.sourceCapabilities` read-only property returns an instance of the [InputDeviceCapabilities](InputDeviceCapabilities.md) interface which provides information about the physical device responsible for generating a touch event. If no input device was responsible for the event, it returns `null`.

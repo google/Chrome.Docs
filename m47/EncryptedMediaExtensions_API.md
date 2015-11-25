@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # EncryptedMediaExtensions API
 
 [MDN documentation is already available](https://developer.mozilla.org/en-US/docs/Web/API/Encrypted_Media_Extensions_API) for this feature.

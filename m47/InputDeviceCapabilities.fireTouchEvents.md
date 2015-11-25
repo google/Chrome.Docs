@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # InputDeviceCapabilities.fireTouchEvents
 
 The **`InputDeviceCapabilities.fireTouchEvents`** read-only property returns a {{jsxref("Boolean")}} that indicates whether the device dispatches touch events.

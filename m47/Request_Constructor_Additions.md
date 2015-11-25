@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # Request.Request()
 
 **Note:** In M46 this option is behind a flag that we hope to remove in M47.
