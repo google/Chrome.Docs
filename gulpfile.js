@@ -12,20 +12,13 @@ function getFiles(dir) {
   });
 }
 
-gulp.task('stamp', function(callback) {
+gulp.task('stamp', function() {
   var files = getFiles(processPath);
   for (var file in files) {
-    filePath = path.join(processPath, files[file])
-    fs.readFile(filePath, 'utf8', function(error, contents) {
-      if (error) {
-        console.log("Failed to read file ", files[file]);
-      }
-      contents = DEFUNCT_MSG + contents;
-      fs.writeFile(filePath, contents, function(error,value) {
-        if (error) {
-          console.log("Encountered ", error, " writing ", files[file]);
-        };
-      })
-    });
+    filepath = path.join(processPath, files[file]);
+    var contents = fs.readFileSync(filepath, "utf8")
+
+    contents = DEFUNCT_MSG + contents;
+    fs.writeFileSync(filepath, contents, "utf8");
   }
 });
