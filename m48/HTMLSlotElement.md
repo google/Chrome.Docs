@@ -1,7 +1,7 @@
 # HTMLSlotElement
 
-The HTMLSlotElement interface of the Shadow DOM API defines the location
-of a slot.
+The HTMLSlotElement interface of the [Shadow DOM API](Shadow_DOM_API.md) 
+defines the location of a slot.
 
 ## Properties
 
