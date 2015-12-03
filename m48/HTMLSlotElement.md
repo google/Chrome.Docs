@@ -5,7 +5,7 @@ defines the location of a slot.
 
 ## Constructors
 
-[HTMLSlotElement(name)](HTMLSlotElement_Constructor.md)
+[HTMLSlotElement()](HTMLSlotElement_Constructor.md)
 
 ## Properties
 
