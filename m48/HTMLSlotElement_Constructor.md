@@ -1,6 +1,6 @@
-# HTMLSlotElement(name)
+# HTMLSlotElement()
 
-The `HTMLSlotElement(name)` constructor creates a new 
+The `HTMLSlotElement()` constructor creates a new 
 [HTMLSlotElement](HTMLSlotElement.md) object.
 
 ## Syntax
