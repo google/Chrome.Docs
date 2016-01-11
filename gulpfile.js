@@ -1,8 +1,8 @@
+var argv = require('yargs').argv;
 var fs = require('fs');
 var gulp = require('gulp');
 var path = require('path');
 
-var processPath = './m47';
 var DEFUNCT_MSG = 'This page is deprecated. It\'s contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)\n\n';
 
 function getFiles(dir) {
@@ -13,6 +13,8 @@ function getFiles(dir) {
 }
 
 gulp.task('stamp', function() {
+  var processPath = String(argv.atPath);
+
   var files = getFiles(processPath);
   for (var file in files) {
     filepath = path.join(processPath, files[file]);
