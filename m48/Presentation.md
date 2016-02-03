@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # Presentation
 
 The Presentation interface of the [Presentation API](Presentation_API.md) provides access to presentation connections. 

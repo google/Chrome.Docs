@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # Event
 
 Per the [Shadow DOM spec](w3c.github.io/webcomponents/spec/shadow) the following additions will be made to the [appropriate MDN page](https://developer.mozilla.org/en-US/docs/Web/API/Event/Event):

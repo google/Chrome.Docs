@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # PresentationConnectionAvailableEvent 
 
 The PresentationConnectionAvailableEvent  interface of the [Presentation API](Presentation_API.md) is fired on a [PresentationRequest](PresentationRequest.md) when a connection associated with the object is created. 

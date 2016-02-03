@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # PresentationConnection.send()
 
 The `PresentationConnection.send()` method of the [Presentation API](Presentation_API.md) sends either binary or text data between a controlling browsing context and a presenting browsing context.

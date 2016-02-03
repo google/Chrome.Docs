@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # PresentationConnection
 
 The PresentationConnection interface of the [Presentation API](Presentation_API.md) provides methods and properties for managing a single presentation.

@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # PresentationConnectionAvailableEvent()
 
 The `PresentationConnectionAvailableInit()` constructor creates a new [PresentationConnectionAvailableEvent ](PresentationConnectionAvailableEvent.md) is fired on a [PresentationRequest](PresentationRequest.md) when a connection associated with the object is created.

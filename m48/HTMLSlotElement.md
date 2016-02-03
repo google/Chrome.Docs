@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # HTMLSlotElement
 
 The HTMLSlotElement interface of the [Shadow DOM API](Shadow_DOM_API.md) 

@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # PresentationRequest
 
 The PresentationRequest interface of the [Presentation API](Presentation_API.md) provides methods for starting a new presentation or joining an active one.

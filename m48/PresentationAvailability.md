@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # PresentationAvailability
 
 The PresentationAvailability interface of the [Presentation API](Presentation_API.md) provides information on the availability of a presentation display.
