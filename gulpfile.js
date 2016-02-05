@@ -5,8 +5,6 @@ var path = require('path');
 var strings = require('./strings.js');
 var util = require('util');
 
-var DEFUNCT_MSG = 'This page is deprecated. It\'s contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)\n\n';
-
 function getFiles(dir) {
   return fs.readdirSync(dir)
   .filter(function(file) {
@@ -22,7 +20,7 @@ gulp.task('stamp', function() {
     filepath = path.join(processPath, files[file]);
     var contents = fs.readFileSync(filepath, "utf8")
 
-    contents = DEFUNCT_MSG + contents;
+    contents = strings.defunct + contents;
     fs.writeFileSync(filepath, contents, "utf8");
   }
 });
