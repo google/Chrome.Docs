@@ -28,7 +28,8 @@ gulp.task('stamp', function() {
 gulp.task('makepage', function() {
   var title = String(argv.title);
   var outPath = String(argv.atPath);
-  var issue = String(argv.issue);
+  //var issue = String(argv.issue);
+  var issue = (argv.crissue ? String(argv.crissue) : String(argv.issue));
   var issuePath = util.format(strings.codepath, issue);
   var fileName = (argv.fileName ? String(argv.fileName) : title )
   fileName = ((fileName.indexOf(".md")==-1) ? (fileName + ".md") : fileName)
