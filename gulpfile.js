@@ -36,7 +36,6 @@ gulp.task('makepage', function() {
   fileName = ((fileName.indexOf(".md")==-1) ? (fileName + ".md") : fileName)
   outPath = path.join(outPath, fileName);
 
-
   var contents = util.format(strings.available, title, issue, issuePath)
   fs.writeFileSync(outPath, contents, "utf8")
 });
