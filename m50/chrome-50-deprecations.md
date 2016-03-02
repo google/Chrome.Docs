@@ -47,11 +47,15 @@ these posts.
 In Chrome 50 (Estimated beta date: March 10 to 17) there are a number of changes to Chrome. 
 This list is subject to change at any time.
 
-**TL;DR:** 
+## AppCache Deprecated on Insecure Contexts
 
-[Intent to Remove]()
-[Chromestatus Tracker]()
-[Chromium Bug]()
+**TL;DR:** To hinder cross-site scripting, AppCache will only be supported on origins serving content over HTTPS.
+
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/UKF8cK0EwMI/discussion)
+[Chromestatus Tracker](https://www.chromestatus.com/feature/5714236168732672)
+[Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=588931)
+
+AppCache is a feature that allows offline and persistent access to an origin, which is a powerful privilege escalation for an cross-site scripting attack. As part of a larger effort to [remove powerful features on insecure origins](ttps://www.chromium.org/Home/chromium-security/deprecating-powerful-features-on-insecure-origins) Chrome is removing this attack vector by only allowing it over HTTPS.
 
 ## subresource Attribute Removed from link
 
