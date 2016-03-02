@@ -57,6 +57,39 @@ This list is subject to change at any time.
 
 AppCache is a feature that allows offline and persistent access to an origin, which is a powerful privilege escalation for an cross-site scripting attack. As part of a larger effort to [remove powerful features on insecure origins](ttps://www.chromium.org/Home/chromium-security/deprecating-powerful-features-on-insecure-origins) Chrome is removing this attack vector by only allowing it over HTTPS.
 
+## Document.defaultCharset is Removed
+
+**TL;DR**: [`document.defaultCharset`](https://github.com/whatwg/dom/issues/58) has
+been removed to improve spec compliance.
+
+[Intent to Remove](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/dqlJguVuIHs)
+[Chromestatus Tracker](https://www.chromestatus.com/features/5730982598541312)
+[CRBug Issue](https://code.google.com/p/chromium/issues/detail?id=522100)
+
+The `document.defaultCharset` is a read-only property that returns the default
+character encoding of the user's system based on their regional settings.  It's
+not been found to be useful to maintain this value because of the way that
+browsers use the character encoding information in the HTTP Response or in the
+meta tag embedded in the page.
+
+Instead, use `document.characterSet` to get the first value specified in the
+HTTP header. If that is not present then you will get the value specified in the
+`charset` attribute of the `<meta>` element (for example, `<meta charset="utf-8">`).
+Finally if none of those are available the `document.characterSet` will be the 
+user's system setting.
+
+<figure>
+  <img src="/web/updates/images/2016/02/chrome-49-deprecations/image01.png" />
+  <figcaption>
+    'Document.defaultCharset' is deprecated and will be removed in M50, around
+    April 2016. See <a href="https://www.chromestatus.com/features/6217124578066432">
+    https://www.chromestatus.com/features/6217124578066432</a> for more details.
+  </figcaption>
+</figure>
+
+More discussion of the reasoning not to spec this out can be read on github
+[https://github.com/whatwg/dom/issues/58](https://github.com/whatwg/dom/issues/58)
+
 ## subresource Attribute Removed from link
 
 **TL;DR:** Remove support for the "subresource" rel of HTMLLinkElement.
