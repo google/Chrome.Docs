@@ -47,13 +47,19 @@ these posts.
 In Chrome 50 (Estimated beta date: March 10 to 17) there are a number of changes to Chrome. 
 This list is subject to change at any time.
 
+**TL;DR:** 
+
+[Intent to Remove]()
+[Chromestatus Tracker]()
+[Chromium Bug]()
+
 ## subresource Attribute Removed from link
 
 **TL;DR:** Remove support for the "subresource" rel of HTMLLinkElement.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/forum/#!searchin/blink-dev/subresource/blink-dev/Y_2eFRh9BOs/gULYapoRBwAJ) 
 [Chromestatus Tracker](https://www.chromestatus.com/features/6596598008119296) 
-[CRBug Issue](https://code.google.com/p/chromium/issues/detail?id=581840)
+[Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=581840)
 
 The intent of the `subresource` atttribute on &lt;link&gt; was to prefetch a resource during a browser's idle time. After a browser downloaaded a page, it could then pre-download resources such as other pages so that when they were requested by users, they could simply be retrieved from the browser cache.
 
@@ -65,7 +71,7 @@ The `subresource` attribute suffered from a number of problems. First, it never 
 
 [Intent to Remove]() 
 [Chromestatus Tracker](https://www.chromestatus.com/feature/6607299456008192) 
-[CRBug Issue](https://code.google.com/p/chromium/issues/detail?id=498588)
+[Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=498588)
 
 The `-webkit-background-composite` property was intended to control the compositing style for background images and color in the padding area of an element. One value extended the background into the padding. The other value did not. 
 
@@ -75,7 +81,7 @@ The `-webkit-background-composite` property was intended to control the composit
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/forum/#!searchin/blink-dev/Insecure$20TLS/blink-dev/yz1lU9YTeys/yCsK50I3CQAJ) 
 [Chromestatus Tracker](https://www.chromestatus.com/feature/5685183936200704) 
-[CRBug Issue](https://code.google.com/p/chromium/issues/detail?id=583787)
+[Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=583787)
 
 Transport layer security (TLS) supports a mechanism for negotiating versions, allowing for the introduction of new TLS versions without breaking compatibility. Some servers implemented this in such a way that browsers were required to use insecure endpoints as a fallback. Because of this, attackers could force _any_ web site, not just that are incorrectly configured, to negotiate for weaker versions of TLS. 
 
@@ -85,7 +91,7 @@ Transport layer security (TLS) supports a mechanism for negotiating versions, al
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/forum/#!searchin/blink-dev/keylocation/blink-dev/lqknEaUYCJM/UbNahDDMAwAJ) 
 [Chromestatus Tracker](https://www.chromestatus.com/features/4997403308457984) 
-[CRBug Issue](https://code.google.com/p/chromium/issues/detail?id=568261)
+[Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=568261)
 
 This attribute is simply an alias to the `Keyboard.prototype.location` attribute, which allows disambiguation between keys that are located multiple places on a keyboard. For example, both attributes allow developers to distinguish between the two `Enter` keys on an extended keybaoard.
 
@@ -137,6 +143,6 @@ WebRTC project, to insulate apps from spec changes and prefix differences.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/nsLnqT__I78/discussion) 
 [Chromestatus Tracker](https://www.chromestatus.com/features/5044837464145920) 
-[CRBug Issue](https://code.google.com/p/chromium/issues/detail?id=357112)
+[Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=357112)
 
 This event existed to support the Gecko compatibility properties `position` and `totalSize`. Support for all three was dropped in Mozilla 22 and the functionality has long been superceded by the [`ProgressEvent`](https://developer.mozilla.org/en-US/docs/Web/API/ProgressEvent).
