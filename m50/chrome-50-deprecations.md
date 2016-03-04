@@ -199,4 +199,14 @@ NPN was the TLS extension used to negotiate SPDY (and, in transition, HTTP/2). D
 
 ## Remove Prefixed Encrypted Media Extensions
 
+**TL;DR:** 
+
+[Intent to Remove]()
+
+[Chromestatus Tracker]()
+
+[Chromium Bug]()
+
 In Chrome 42, we shipped a [specification-based](https://w3c.github.io/encrypted-media/), unprefixed version of encrypted media extensions. This API is used to discover, select, and interact with Digital Rights Management systems for use with `HTMLMediaElement`.
+
+That was nearly a year ago. And since the unprefixed version has more capabilities than the prefixed version, it's time to remove the prefixed version of the API. 
