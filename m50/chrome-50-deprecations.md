@@ -15,6 +15,8 @@ In nearly every version of Chrome we see a significant number of updates and
 improvements to the product, its performance, and also capabilities of the web
 platform.
 
+{% include shared/toc.liquid %}
+
 ## Deprecation policy
 
 To keep the platform healthy we sometimes remove APIs from the Web Platform which
@@ -132,9 +134,9 @@ now require an error handler as well as a success handler. Previously it had
 been possible to call these methods with only a success handler. That usage is
 deprecated.
 
-[Intent to Remove]()
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/V7-02zJiVzw/discussion)
 
-[Chromestatus Tracker]()
+[Chromestatus Tracker](https://www.chromestatus.com/feature/5663288008376320)
 
 [Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=579476)
 
