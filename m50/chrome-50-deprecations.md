@@ -50,6 +50,30 @@ these posts.
 In Chrome 50 (Estimated beta date: March 10 to 17) there are a number of changes to Chrome. 
 This list is subject to change at any time.
 
+## Remove Support for SPDY/3.1
+
+**TL;DR:** Support for HTTP/2 is widespread enough that SPDY/3.1 support can be dropped. 
+
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/_f24SluuXtc/discussion)
+
+[Chromestatus Tracker](https://www.chromestatus.com/feature/5711167683035136)
+
+[Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=587469)
+
+SPDY/3.1 was an experimental application layer protocol that provided performance improvements over HTTP/1.1. It dide this by, for example, connection multiplexing and server push. Many of its features were incorporated into HTTP/2, which was published as an RFC last May. Since HTTP/2 is supported by major servers and clients, it's time to remove SPDY/3.1 from Chrome.
+
+## Remove TLS Next Protocol Negotiation (NPN)
+
+**TL;DR:** As part of deprecation of SPDY, NPN is removed, having previously been replaced with ALPN.
+
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/Qroz7eyCzRs/discussion)
+
+[Chromestatus Tracker](https://www.chromestatus.com/feature/5767920709795840)
+
+[Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=587472)
+
+NPN was the TLS extension used to negotiate SPDY (and, in transition, HTTP/2). During the standardization process, NPN was replaced with ALPN, published as RFC 7301 in July 2014. We intend to remove NPN at the same time as the SPDY removal.
+
 ## AppCache Deprecated on Insecure Contexts
 
 **TL;DR:** To hinder cross-site scripting, AppCache will only be supported on origins serving content over HTTPS.
@@ -88,9 +112,9 @@ user's system setting.
 More discussion of the reasoning not to spec this out can be read on github
 [https://github.com/whatwg/dom/issues/58](https://github.com/whatwg/dom/issues/58)
 
-## subresource Attribute Removed from link
+## subresource Attribute Removed from link Element
 
-**TL;DR:** Remove support for the "subresource" rel of HTMLLinkElement.
+**TL;DR:** Remove support for the `subresource` value for the `rel` attribute of `HTMLLinkElement`.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/forum/#!searchin/blink-dev/subresource/blink-dev/Y_2eFRh9BOs/gULYapoRBwAJ) 
 
@@ -102,9 +126,11 @@ The intent of the `subresource` atttribute on &lt;link&gt; was to prefetch a res
 
 The `subresource` attribute suffered from a number of problems. First, it never worked as intended. Referenced resources were downloaded with low priority. The attribute was never implemented on any browser other than Chrome. The Chrome implementation had a bug that caused resources to be downloaded twice.
 
+Developers looking to improve the user experience through preloading of content have a number of options, the most customizable of which is to build a service worker to take advantage of precaching and the Caches API. Quicker solutions include [other values for the `rel` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) including `preconnect`, `prefetch`, `preload`, `prerender`. Some of these options are experimental an may not be widely supported.
+
 ## Remove Insecure TLS Version Fallback
 
-**TL;DR:** Remove a mechanism for forcing servers to return data using less or non secure versions of TLS.
+**TL;DR:** Remove a mechanism for forcing servers to return data using less- or non-secure versions of TLS.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/forum/#!searchin/blink-dev/Insecure$20TLS/blink-dev/yz1lU9YTeys/yCsK50I3CQAJ) 
 
@@ -112,7 +138,7 @@ The `subresource` attribute suffered from a number of problems. First, it never 
 
 [Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=583787)
 
-Transport layer security (TLS) supports a mechanism for negotiating versions, allowing for the introduction of new TLS versions without breaking compatibility. Some servers implemented this in such a way that browsers were required to use insecure endpoints as a fallback. Because of this, attackers could force _any_ web site, not just that are incorrectly configured, to negotiate for weaker versions of TLS. 
+Transport layer security (TLS) supports a mechanism for negotiating versions, allowing for the introduction of new TLS versions without breaking compatibility. Some servers implemented this in such a way that browsers were required to use insecure endpoints as a fallback. Because of this, attackers could force _any_ web site, not just those that are incorrectly configured, to negotiate for weaker versions of TLS. 
 
 ## Remove KeyboardEvent.prototype.keyLocation
 
@@ -141,7 +167,7 @@ deprecated.
 
 [Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=579476)
 
-In Chrome 49 we've also added a warning if you call 
+In Chrome 49we added a warning if you call 
 [`setLocalDescription()`](https://w3c.github.io/webrtc-pc/#widl-RTCPeerConnection-setLocalDescription-Promise-void--RTCSessionDescriptionInit-description) 
 or [`setRemoteDescription()`](https://w3c.github.io/webrtc-pc/#widl-RTCPeerConnection-setRemoteDescription-Promise-void--RTCSessionDescriptionInit-description)
 without supplying an error handler. The error handler argument is mandatory as of Chrome 50.
@@ -171,7 +197,7 @@ error handler argument if it's present; calling this code in an older browser
 will not cause an exception.
 
 In general, for production WebRTC applications we recommend that you use
-[`adapter.js`](https://github.com/webrtc/adapter),  a shim, maintained by the
+[`adapter.js`](https://github.com/webrtc/adapter), a shim, maintained by the
 WebRTC project, to insulate apps from spec changes and prefix differences.
 
 ## The XMLHttpRequestProgressEvent is No Longer Supported
@@ -186,21 +212,9 @@ WebRTC project, to insulate apps from spec changes and prefix differences.
 
 This event existed to support the Gecko compatibility properties `position` and `totalSize`. Support for all three was dropped in Mozilla 22 and the functionality has long been superceded by the [`ProgressEvent`](https://developer.mozilla.org/en-US/docs/Web/API/ProgressEvent).
 
-## Remove TLS Next Protocol Negotiation (NPN)
-
-**TL;DR:** As part of deprecation of SPDY, NPN is removed, having previously been replaced with ALPN.
-
-[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/Qroz7eyCzRs/discussion)
-
-[Chromestatus Tracker](https://www.chromestatus.com/feature/5767920709795840)
-
-[Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=587472)
-
-NPN was the TLS extension used to negotiate SPDY (and, in transition, HTTP/2). During the standardization process, NPN was replaced with ALPN, published as RFC 7301 in July 2014. We intend to remove NPN at the same time as the SPDY removal.
-
 ## Remove Prefixed Encrypted Media Extensions
 
-**TL;DR:** 
+**TL;DR:** Prefixed encrypted media extensions have been removed in favor of a spec-based, unprefixed replacement.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/3pgmSwtHLLA/discussion)
 
@@ -211,3 +225,17 @@ NPN was the TLS extension used to negotiate SPDY (and, in transition, HTTP/2). D
 In Chrome 42, we shipped a [specification-based](https://w3c.github.io/encrypted-media/), unprefixed version of encrypted media extensions. This API is used to discover, select, and interact with Digital Rights Management systems for use with `HTMLMediaElement`.
 
 That was nearly a year ago. And since the unprefixed version has more capabilities than the prefixed version, it's time to remove the prefixed version of the API. 
+
+## Remove Support for SVGElement.offset Properties
+
+**TL;DR:** Offset properties for SVGElement have been dropped in favor of the more widely-supported properties on `HTMLElement`.
+
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/jjwLLSG_hGY/discussion)
+
+[Chromestatus Tracker](https://www.chromestatus.com/features/5724912467574784)
+
+[Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=463116)
+
+Offset properties have long been supported by both `HTMLElement` and `SVGElement`; however, Geck and Edge only support then on `HTMLElement`. To improve consistency between browsers these properties were deprecated in Chrome 48 and are now being removed.
+
+Though equivalent properties are part of `HTMLElement`, developers looking for an alternative can also use `[getBoundingClientRect()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)`
