@@ -9,6 +9,7 @@ authors:
   - josephmedley
 tags:
   - deprecations
+  - removals
 ---
 
 In nearly every version of Chrome we see a significant number of updates and
@@ -201,11 +202,11 @@ NPN was the TLS extension used to negotiate SPDY (and, in transition, HTTP/2). D
 
 **TL;DR:** 
 
-[Intent to Remove]()
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/3pgmSwtHLLA/discussion)
 
-[Chromestatus Tracker]()
+[Chromestatus Tracker](https://www.chromestatus.com/features/6578378068983808)
 
-[Chromium Bug]()
+[Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=249976)
 
 In Chrome 42, we shipped a [specification-based](https://w3c.github.io/encrypted-media/), unprefixed version of encrypted media extensions. This API is used to discover, select, and interact with Digital Rights Management systems for use with `HTMLMediaElement`.
 
