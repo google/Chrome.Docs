@@ -197,3 +197,6 @@ This event existed to support the Gecko compatibility properties `position` and 
 
 NPN was the TLS extension used to negotiate SPDY (and, in transition, HTTP/2). During the standardization process, NPN was replaced with ALPN, published as RFC 7301 in July 2014. We intend to remove NPN at the same time as the SPDY removal.
 
+## Remove Prefixed Encrypted Media Extensions
+
+In Chrome 42, we shipped a [specification-based](https://w3c.github.io/encrypted-media/), unprefixed version of encrypted media extensions. This API is used to discover, select, and interact with Digital Rights Management systems for use with `HTMLMediaElement`.
