@@ -136,7 +136,7 @@ deprecated.
 
 [Chromestatus Tracker]()
 
-[Chromium Bug]()
+[Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=579476)
 
 In Chrome 49 we've also added a warning if you call 
 [`setLocalDescription()`](https://w3c.github.io/webrtc-pc/#widl-RTCPeerConnection-setLocalDescription-Promise-void--RTCSessionDescriptionInit-description) 
