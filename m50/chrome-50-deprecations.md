@@ -52,7 +52,9 @@ This list is subject to change at any time.
 **TL;DR:** To hinder cross-site scripting, AppCache will only be supported on origins serving content over HTTPS.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/UKF8cK0EwMI/discussion)
+
 [Chromestatus Tracker](https://www.chromestatus.com/feature/5714236168732672)
+
 [Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=588931)
 
 AppCache is a feature that allows offline and persistent access to an origin, which is a powerful privilege escalation for an cross-site scripting attack. As part of a larger effort to [remove powerful features on insecure origins](ttps://www.chromium.org/Home/chromium-security/deprecating-powerful-features-on-insecure-origins) Chrome is removing this attack vector by only allowing it over HTTPS.
@@ -63,7 +65,9 @@ AppCache is a feature that allows offline and persistent access to an origin, wh
 been removed to improve spec compliance.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/dqlJguVuIHs)
+
 [Chromestatus Tracker](https://www.chromestatus.com/features/5730982598541312)
+
 [CRBug Issue](https://code.google.com/p/chromium/issues/detail?id=522100)
 
 The `document.defaultCharset`, deprecated in Chrome 49, is a read-only property that returns the default
@@ -86,7 +90,9 @@ More discussion of the reasoning not to spec this out can be read on github
 **TL;DR:** Remove support for the "subresource" rel of HTMLLinkElement.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/forum/#!searchin/blink-dev/subresource/blink-dev/Y_2eFRh9BOs/gULYapoRBwAJ) 
+
 [Chromestatus Tracker](https://www.chromestatus.com/features/6596598008119296) 
+
 [Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=581840)
 
 The intent of the `subresource` atttribute on &lt;link&gt; was to prefetch a resource during a browser's idle time. After a browser downloaaded a page, it could then pre-download resources such as other pages so that when they were requested by users, they could simply be retrieved from the browser cache.
@@ -98,7 +104,9 @@ The `subresource` attribute suffered from a number of problems. First, it never 
 **TL;DR:** Remove a mechanism for forcing servers to return data using less or non secure versions of TLS.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/forum/#!searchin/blink-dev/Insecure$20TLS/blink-dev/yz1lU9YTeys/yCsK50I3CQAJ) 
+
 [Chromestatus Tracker](https://www.chromestatus.com/feature/5685183936200704) 
+
 [Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=583787)
 
 Transport layer security (TLS) supports a mechanism for negotiating versions, allowing for the introduction of new TLS versions without breaking compatibility. Some servers implemented this in such a way that browsers were required to use insecure endpoints as a fallback. Because of this, attackers could force _any_ web site, not just that are incorrectly configured, to negotiate for weaker versions of TLS. 
@@ -108,7 +116,9 @@ Transport layer security (TLS) supports a mechanism for negotiating versions, al
 **TL;DR:** Remove an unneeded alisas for the `Keyboard.prototype.location` attribute.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/forum/#!searchin/blink-dev/keylocation/blink-dev/lqknEaUYCJM/UbNahDDMAwAJ) 
+
 [Chromestatus Tracker](https://www.chromestatus.com/features/4997403308457984) 
+
 [Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=568261)
 
 This attribute is simply an alias to the `Keyboard.prototype.location` attribute, which allows disambiguation between keys that are located multiple places on a keyboard. For example, both attributes allow developers to distinguish between the two `Enter` keys on an extended keybaoard.
@@ -121,6 +131,12 @@ and [`createAnswer()`](https://w3c.github.io/webrtc-pc/#widl-RTCPeerConnection-c
 now require an error handler as well as a success handler. Previously it had 
 been possible to call these methods with only a success handler. That usage is
 deprecated.
+
+[Intent to Remove]()
+
+[Chromestatus Tracker]()
+
+[Chromium Bug]()
 
 In Chrome 49 we've also added a warning if you call 
 [`setLocalDescription()`](https://w3c.github.io/webrtc-pc/#widl-RTCPeerConnection-setLocalDescription-Promise-void--RTCSessionDescriptionInit-description) 
@@ -160,7 +176,9 @@ WebRTC project, to insulate apps from spec changes and prefix differences.
 **TL;DR:** The `XMLHttpRequestProgressEvent` interface will be removed, together with the attributes `position` and `totalSize`. 
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/nsLnqT__I78/discussion) 
+
 [Chromestatus Tracker](https://www.chromestatus.com/features/5044837464145920) 
+
 [Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=357112)
 
 This event existed to support the Gecko compatibility properties `position` and `totalSize`. Support for all three was dropped in Mozilla 22 and the functionality has long been superceded by the [`ProgressEvent`](https://developer.mozilla.org/en-US/docs/Web/API/ProgressEvent).
