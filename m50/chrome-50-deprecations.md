@@ -184,3 +184,16 @@ WebRTC project, to insulate apps from spec changes and prefix differences.
 [Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=357112)
 
 This event existed to support the Gecko compatibility properties `position` and `totalSize`. Support for all three was dropped in Mozilla 22 and the functionality has long been superceded by the [`ProgressEvent`](https://developer.mozilla.org/en-US/docs/Web/API/ProgressEvent).
+
+## Remove TLS Next Protocol Negotiation (NPN)
+
+**TL;DR:** As part of deprecation of SPDY, NPN is removed, having previously been replaced with ALPN.
+
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/Qroz7eyCzRs/discussion)
+
+[Chromestatus Tracker](https://www.chromestatus.com/feature/5767920709795840)
+
+[Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=587472)
+
+NPN was the TLS extension used to negotiate SPDY (and, in transition, HTTP/2). During the standardization process, NPN was replaced with ALPN, published as RFC 7301 in July 2014. We intend to remove NPN at the same time as the SPDY removal.
+
