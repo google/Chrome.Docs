@@ -51,8 +51,8 @@ This list is subject to change at any time.
 
 **TL;DR:** Remove support for the `-webkit-background-composite` property as it is non-standard and only supported by WebKit and Blink.
 
-[Intent to Remove]() 
-[Chromestatus Tracker](https://www.chromestatus.com/feature/6607299456008192) 
+[Intent to Remove]() &#124;
+[Chromestatus Tracker](https://www.chromestatus.com/feature/6607299456008192) &#124;
 [Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=498588)
 
 The `-webkit-background-composite` property was intended to control the compositing style for background images and color in the padding area of an element. One value extended the background into the padding. The other value did not. 
