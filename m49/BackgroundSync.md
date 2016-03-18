@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # Background Sync API for Service Workers
 
 Issue: [449443](https://code.google.com/p/chromium/issues/detail?id=449443)

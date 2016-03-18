@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # Destructuring (ES6)
 
 Issue: [811](https://bugs.chromium.org/p/v8/issues/detail?id=811)

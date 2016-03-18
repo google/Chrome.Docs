@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # Added code and key to KeyboardEventInit
 
 Issue: [327853](https://code.google.com/p/chromium/issues/detail?id=327853)

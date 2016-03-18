@@ -1,3 +1,5 @@
+This page is deprecated. It's contents have been moved to [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
 # Support case-insensitive attribute selector modifier
 
 Issue: [567732](https://code.google.com/p/chromium/issues/detail?id=567732)
