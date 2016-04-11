@@ -47,12 +47,16 @@ these posts.
 In Chrome 51 (Estimated beta date: April 21 to 28) there are a number of changes to Chrome. 
 This list is subject to change at any time.
 
-## Remove -webkit-background-composite Property
+## Remove Custom Messages in onbeforeload Dialogs
 
-**TL;DR:** Remove support for the `-webkit-background-composite` property as it is non-standard and only supported by WebKit and Blink.
+**TL;DR:** A window's `onbeforeload` property no longer supports a custom string.
 
-[Intent to Remove]() &#124;
-[Chromestatus Tracker](https://www.chromestatus.com/feature/6607299456008192) &#124;
-[Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=498588)
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/YIH8CoYVGSg/discussion) &#124;
+[Chromestatus Tracker](https://www.chromestatus.com/feature/5349061406228480) &#124;
+[Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=587940)
 
-The `-webkit-background-composite` property was intended to control the compositing style for background images and color in the padding area of an element. One value extended the background into the padding. The other value did not. 
+A window’s `onbeforeunload` property may be set to a function that returns a string that is shown to the user in a dialog box to confirm that the user wants to navigate away. This was intended to prevent users from loosing data during navigation. Unfortuantely, it is often used to scam users. 
+
+Starting in Chrome 51, a custom string will no longer be shown to the user. Chrome will still show a dialog to prevent users from loosing data, but it's contents will be set by the browser instead of the web page.
+
+With this change, Chrome will be consistent with Safari 9.1 and later, as well as Firefox 4 and later.
