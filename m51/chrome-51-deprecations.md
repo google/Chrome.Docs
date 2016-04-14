@@ -1,11 +1,10 @@
 ---
 layout: updates/post
-title: "API Deprecations and Removals in Chrome 51"
-description: "An round up of the deprecations and API removals in Chrome to help you plan."
+title: "API Deprecations in Chrome 51"
+description: "An round up of the deprecations in Chrome to help you plan."
 published_on: 
 updated_on: 
 authors:
-  - paulkinlan
   - josephmedley
 tags:
   - deprecations
