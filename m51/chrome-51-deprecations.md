@@ -62,7 +62,7 @@ Starting in Chrome 51, a custom string will no longer be shown to the user. Chro
 
 With this change, Chrome will be consistent with Safari 9.1 and later, as well as Firefox 4 and later.
 
-## Deprecated `results` attribute for `<input type=search>`
+## Deprecated results attribute for <input type=search>
 
 **TL;DR:** The `result` attribute is being deprecated because it's not part of any standard and it inconsistently implemented across browsers.
 
