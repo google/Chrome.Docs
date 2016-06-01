@@ -51,15 +51,17 @@ and removed features by applying the
 try to summarize some of the changes, reasoning, and migration paths in 
 these posts.
 
-## Remove certain pop-ups from certain iframe events
+## Block pop-ups from cross-origin iframes during touch events except during a tap gesture
 
-**TL;DR:** 
+**TL;DR:** Chrome will begin disallowing pop-ups and other sensitive operations on touch events that don't correspond to a tap from inside of cross-origin iframes.
 
-[Intent to Remove]() &#124;
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/piK75azdN5o/discussion) &#124;
 [Chromestatus Tracker](https://www.chromestatus.com/feature/5649871251963904) &#124;
 [Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=582140)
 
+By their very nature, touch events can be ambiguous when compared to their corresponding mouse events. For example, if a user slides a finger across the screen, is said user sliding a toggle switch or scrolling the view. Some third-party content in iframes have taken advantage of this ambiquity to intentionally disable scrolling on the containing page.
 
+To combat this, pop-ups and other sensitive operations will be disallowed on touch events from cross-origin iframes. Tap gestures will continue to behave as previously.
 
 ## Deprecate overload of postMessage()
 
