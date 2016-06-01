@@ -65,13 +65,21 @@ To combat this, pop-ups and other sensitive operations will be disallowed on tou
 
 ## Deprecate overload of postMessage()
 
-**TL;DR:** 
+**TL;DR:** An uneeded and little-used variant of the `postMessage()` interface is being deprecated.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/h4ooaB_Y9JE/discussion) &#124;
 [Chromestatus Tracker](https://www.chromestatus.com/feature/5719033043222528) &#124;
 [Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=425896)
 
+WebKit/Blink supports three overloads of window.postMessage(): 
 
+* `postMessage(message, targetOrigin)`
+* `postMessage(message, targetOrigin, transferables)`
+* `postMessage(message, transferables, targetOrigin)`
+
+The last item was an accident from the history of the spec's evolution and implementation. Because it has [little or no actual use](https://www.chromestatus.com/metrics/feature/timeline/popularity/575), it will be deprecated and removed.
+
+Removal is expected in Chrome 54.
 
 ## Deprecate MediaStream ended event and onended attribute
 
