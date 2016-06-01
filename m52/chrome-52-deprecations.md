@@ -58,3 +58,47 @@ these posts.
 [Intent to Remove]() &#124;
 [Chromestatus Tracker](https://www.chromestatus.com/feature/5649871251963904) &#124;
 [Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=582140)
+
+
+
+## Deprecate overload of postMessage()
+
+**TL;DR:** 
+
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/h4ooaB_Y9JE/discussion) &#124;
+[Chromestatus Tracker](https://www.chromestatus.com/feature/5719033043222528) &#124;
+[Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=425896)
+
+
+
+## Deprecate MediaStream ended event and onended attribute
+
+**TL;DR:** 
+
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/EHy8zm0eVy0/discussion) &#124;
+[Chromestatus Tracker](https://www.chromestatus.com/feature/5730404371791872) &#124;
+[Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=608795)
+
+
+
+## Remove non-primary button click event
+
+**TL;DR:** 
+
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/pYAh8bBl5Yc/discussion) &#124;
+[Chromestatus Tracker](https://www.chromestatus.com/feature/5769439450497024) &#124;
+[Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=255)
+
+
+## Remove requestAutocomplete
+
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/O9_XnDQh3Yk/discussion)
+
+
+
+## Remove support for X-Frame-Options in <meta> tags
+
+**TL;DR:** 
+
+[Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/R1gkjKZI0J8/discussion) &#124;
+[Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=603002)
