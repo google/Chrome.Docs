@@ -71,36 +71,37 @@ To combat this, pop-ups and other sensitive operations will be disallowed on tou
 [Chromestatus Tracker](https://www.chromestatus.com/feature/5719033043222528) &#124;
 [Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=425896)
 
-WebKit/Blink supports three overloads of window.postMessage(): 
+The `postMessage()` method is a way to securely communicate between the scripts of pages on different origins. WebKit/Blink supports three versions: 
 
 * `postMessage(message, targetOrigin)`
 * `postMessage(message, targetOrigin, transferables)`
 * `postMessage(message, transferables, targetOrigin)`
 
-The last item was an accident from the history of the spec's evolution and implementation. Because it has [little or no actual use](https://www.chromestatus.com/metrics/feature/timeline/popularity/575), it will be deprecated and removed.
+The last item was an accident from the history of the spec's evolution and implementation. Because it has [little or no actual use](https://www.chromestatus.com/metrics/feature/timeline/popularity/575), it will be deprecated and removed. This applies to both `window.postMessage()` and `worker.postMessage()`.
 
 Removal is expected in Chrome 54.
 
 ## Deprecate MediaStream ended event and onended attribute
 
-**TL;DR:** 
+The `ended` event and the `onended` event handler have been removed from the [Media Capture and Streams spec](https://www.w3.org/TR/mediacapture-streams/).
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/EHy8zm0eVy0/discussion) &#124;
 [Chromestatus Tracker](https://www.chromestatus.com/feature/5730404371791872) &#124;
 [Chromium Bug](https://code.google.com/p/chromium/issues/detail?id=608795)
 
-
-
 ## Remove non-primary button click event
 
-**TL;DR:** 
+To bring Chrome in line with the [UIEvents spec](https://w3c.github.io/uievents/#event-type-click), we're removing the mouse events for non-primary mouse buttons.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/pYAh8bBl5Yc/discussion) &#124;
 [Chromestatus Tracker](https://www.chromestatus.com/feature/5769439450497024) &#124;
 [Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=255)
 
 
+
 ## Remove requestAutocomplete
+
+The `requestAutocomplete()` function allowed forms to be filled out on demand by the browser's autofill capability. Yet more than two years in this capability is only supported in blink and its [usage is low](https://www.chromestatus.com/metrics/feature/timeline/popularity/965). For these reasons, `requestAutocomplete()` is removed in Chrome 52.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/O9_XnDQh3Yk/discussion)
 
@@ -108,7 +109,11 @@ Removal is expected in Chrome 54.
 
 ## Remove support for X-Frame-Options in <meta> tags
 
-**TL;DR:** 
+**TL;DR:** To both comply with the spec and increase consistency with other browsers, support for `X-Frame-Options` inside a `&lt;meta&gt;1 tag is being removed.
 
 [Intent to Remove](https://groups.google.com/a/chromium.org/d/topic/blink-dev/R1gkjKZI0J8/discussion) &#124;
 [Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=603002)
+
+The `X-Frame-Options` HTTP response header indicates whether a browser can render a page in an`&lt;frame&gt;`, `&lt;iframe&gt;`, or `&lt;object&gt;` tag. This let's a site avoid clickjacking since such pages cannot be embedded in other sites. The current version of the [X-Frame-Options spec](https://tools.ietf.org/html/rfc7034) explicitely restricts user agens from supporting this field inside a `&lt;meta&gt;1 tag. 
+
+To both comply with the spec and increase consistency with other browsers, support for `X-Frame-Options` inside a `&lt;meta&gt;1 tag is being removed.
