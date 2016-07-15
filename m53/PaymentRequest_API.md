@@ -1,3 +1,5 @@
+{{SeeCompatTable}}{{APIRef("Payment Request API")}}
+
 # Payment Request API
 
 <p class="summary">

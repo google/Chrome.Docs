@@ -1,3 +1,5 @@
+{{SeeCompatTable}}{{APIRef("Payment Request API")}}
+
 # PaymentRequestUpdateEvent
 
 ## Constructor

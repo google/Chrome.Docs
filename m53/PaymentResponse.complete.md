@@ -1,3 +1,5 @@
+{{SeeCompatTable}}{{APIRef("Payment Request API")}}
+
 # PaymentResponse.complete()
 
 The `PaymentRequest.complete()` method of the [PaymentRequest API](PaymentRequest_API.md) 

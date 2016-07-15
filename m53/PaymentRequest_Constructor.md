@@ -1,3 +1,5 @@
+{{SeeCompatTable}}{{APIRef("Payment Request API")}}
+
 # PaymentRequest()
 
 The `PaymentRequest()` constructor creates a new [PaymentRequest](PaymentRequest.md) object which 

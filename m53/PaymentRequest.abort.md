@@ -1,3 +1,5 @@
+{{SeeCompatTable}}{{APIRef("Payment Request API")}}
+
 # PaymentRequest.abort()
 
 The `PaymentRequest.abort()` method of the [PaymentRequest API](PaymentRequest_API.md) 
@@ -15,8 +17,6 @@ Void.
 None
 
 ## Examples
-
-
 
 # Specifications
 
