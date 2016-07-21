@@ -8,7 +8,7 @@
 
 In the example below, the {{domxref('PaymentRequest.onshippingaoptionchange')}} event is called. It calls `updateDetails()` to toggle the shipping method between 'standard' and 'express'. 
 
-``javascript
+```javascript
 // Initialization of PaymentRequest arguments are excerpted for the sake of
 //   brevity.
 try {

@@ -10,7 +10,7 @@ This event is also triggered by the user interactions with the user agent. This 
 
 The `shippingaddresschange` event is triggered by a user-agent controlled interaction. If the address stored by the user agent changes at any time during a payment process, the event will be triggered. To make sure an updated address is included when sending payment information to the server, you should add event listeners for a {{domxref('PaymentRequest')}} object after instantiation, but before the call to `show()`. 
 
-``javascript
+```javascript
 // Initialization of PaymentRequest arguments are excerpted for the sake of
 //   clarity.
 try {

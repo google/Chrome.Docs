@@ -10,7 +10,7 @@ Generally, the user agent will fill the `shippingAddress` property for you. Trig
 
 In the example below, the cost of shipping varies by geography. When the {{domxref('PaymentRequest.onshippingaddresschange')}} is called, `updateDetails()` is called to update the details of the `PaymentRequest', using `shippingAddress` to set the correct shipping cost. 
 
-``javascript
+```javascript
 // Initialization of PaymentRequest arguments are excerpted for the sake of
 //   brevity.
 try {

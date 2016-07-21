@@ -64,7 +64,51 @@ An instance of the [PaymentRequest](PaymentRequest.md) interface.
 
 ## Example
 
-TBD
+The following example shows minimal functionality and focuses instead on showing the complete context of instantiating a `PaymentRequest` object.
+
+```javascript
+  var supportedInstruments = [{
+    supportedMethods: [
+      'amex', 'diners', 'discover', 'jcb', 'maestro', 'mastercard', 'visa'
+    ]
+  }];
+
+  var details = {
+    total: {label: 'Donation', amount: {currency: 'USD', value: '55.00'}},
+    displayItems: [
+      {
+        label: 'Original donation amount',
+        amount: {currency: 'USD', value: '65.00'}
+      }
+    ],
+    shippingOptions: [
+      {
+        id: 'standard',
+        label: 'Standard shipping',
+        amount: {currency: 'USD', value: '0.00'},
+        selected: true
+      }
+    ]
+  };
+
+  var options = {requestShipping: true};
+
+    try {
+    var request = new PaymentRequest(supportedInstruments, details, options);
+
+    // Add event listeners here.
+
+    // Call show() to trigger the browser's payment flow.
+    request.show().then(function(instrumentResponse) {
+      // Do something with the response from the UI.
+    })
+    .catch(function(err) {
+      // Do something with the error from request.show().
+    });
+  } catch (e) {
+    // Catch any other errors.
+  }
+```
 
 ## Specifications
 
