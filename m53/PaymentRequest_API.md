@@ -8,17 +8,19 @@
 
 ## Payment Request Concepts and Usage
 
+TBD
+
 ## Interfaces
 
 <dl>
-  <dt>PaymentRequest</dt>
-  <dd></dd>
-  <dt>PaymentRequestUpdateEvent</dt>
-  <dd></dd>
-  <dt>PaymentResponse</dt>
-  <dd></dd>
-  <dt>ShippingAddress</dt>
-  <dd></dd>
+  <dt>[PaymentRequest](PaymentRequest.md)</dt>
+  <dd>Manages the process of a user making a payment.</dd>
+  <dt>[PaymentRequestUpdateEvent](PaymentRequestUpdateEvent.md)</dt>
+  <dd>Enables a web page to update the details of a payment request in response to a user interaction.</dd>
+  <dt>[PaymentResponse](PaymentResponse.md)</dt>
+  <dd>Returned after a user selects a payment method and approves a payment request. </dd>
+  <dt>[PaymentAddress](PaymentAddress.md)</dt>
+  <dd>Stores address information.</dd>
 </dl>
 
 ## Specifications

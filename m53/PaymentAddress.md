@@ -1,6 +1,6 @@
 {{SeeCompatTable}}{{APIRef("Payment Request API")}}
 
-# ShippingAddress
+# PaymentAddress
 
 ## Constructor
 
