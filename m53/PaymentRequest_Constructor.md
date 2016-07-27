@@ -2,7 +2,7 @@
 
 # PaymentRequest()
 
-The `PaymentRequest()` constructor creates a new [PaymentRequest](PaymentRequest.md) object which 
+The `PaymentRequest()` constructor creates a new [PaymentRequest](PaymentRequest.md) object.
 
 ## Syntax
 
@@ -16,7 +16,7 @@ An instance of the [PaymentRequest](PaymentRequest.md) interface.
 
 <dl>
   <dt>supportedMethods</dt>
-  <dd></dd>
+  <dd>A sequence of strings indicating the payment methods the merchant web site accepts.</dd>
   <dt>details</dt>
   <dd>
     <dl>

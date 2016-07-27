@@ -2,7 +2,13 @@
 
 # PaymentRequest.shippingAddress
 
+The `shippingAddress` read-only property of the `PaymentRequest` interface returns a [PaymentAddress](PaymentRequest.PaymentAddress.md) object containing the shipping address provided by the user.
+
 ## Syntax
+
+```
+var paymentAddress = PaymentRequest.shippingAddress
+```
 
 ## Example
 
