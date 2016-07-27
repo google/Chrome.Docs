@@ -13,13 +13,13 @@ TBD
 ## Interfaces
 
 <dl>
-  <dt>[PaymentRequest](PaymentRequest.md)</dt>
+  <dt><a href="PaymentRequest.md">PaymentRequest</a></dt>
   <dd>Manages the process of a user making a payment.</dd>
-  <dt>[PaymentRequestUpdateEvent](PaymentRequestUpdateEvent.md)</dt>
+  <dt><a href="PaymentRequestUpdateEvent.md">PaymentRequestUpdateEvent</a></dt>
   <dd>Enables a web page to update the details of a payment request in response to a user interaction.</dd>
-  <dt>[PaymentResponse](PaymentResponse.md)</dt>
+  <dt><a href="PaymentResponse.md">PaymentResponse</a></dt>
   <dd>Returned after a user selects a payment method and approves a payment request. </dd>
-  <dt>[PaymentAddress](PaymentAddress.md)</dt>
+  <dt><a href="PaymentAddress.md">PaymentAddress</a></dt>
   <dd>Stores address information.</dd>
 </dl>
 
