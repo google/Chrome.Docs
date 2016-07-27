@@ -6,7 +6,11 @@ The `PaymentRequest.show()` method of the [PaymentRequest API](PaymentRequest_AP
 
 ## Syntax
 
-`PaymentRequest.show();
+```
+PaymentRequest.show()
+	.then( paymentResponse => { ... })
+	.catch( error => { ... })
+```
 
 ### Returns
 

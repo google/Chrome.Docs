@@ -6,7 +6,7 @@ The `PaymentRequest()` constructor creates a new [PaymentRequest](PaymentRequest
 
 ## Syntax
 
-`var paymentRequest = new PaymentRequest(supportedMethods, details[, options[, data]])`
+`var paymentRequest = new PaymentRequest(supportedMethods, details[, options][, data])`
 
 ### Returns
 

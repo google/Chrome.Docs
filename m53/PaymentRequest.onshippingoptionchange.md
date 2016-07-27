@@ -7,6 +7,7 @@ Fired whenever the user chaneges a shipping option.
 ## syntax
 
 ```
+PaymentRequest.addEventListener('shippingoptionchange', shippingoptionchangeevent => { ... })
 PaymentRequest.onshippingoptionchange = function(shippingoptionchangeevent) { ... }
 ```
 

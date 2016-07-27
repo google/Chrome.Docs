@@ -2,8 +2,6 @@
 
 # PaymentAddress
 
-## Constructor
-
 ## Properties
 
 <dl>

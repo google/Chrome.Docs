@@ -4,6 +4,8 @@
 
 ## Syntax
 
+`var methodName = PaymentResponse.methodName`
+
 ## Example
 
 ## Specifications

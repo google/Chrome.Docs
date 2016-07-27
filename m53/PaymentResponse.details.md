@@ -4,6 +4,8 @@
 
 ## Syntax
 
+`var detailsObject = PaymentResponse.details`
+
 ## Example
 
 ## Specifications

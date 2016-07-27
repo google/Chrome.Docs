@@ -7,6 +7,7 @@ Fired whenever the user chaneges their shipping address. This event is also trig
 ## syntax
 
 ```
+PaymentRequest.addEventListener('shippingaddresschange', shippingaddresschangeevent => { ... })
 PaymentRequest.onshippingaddresschange = function(shippingaddresschangeevent) { ... }
 ```
 

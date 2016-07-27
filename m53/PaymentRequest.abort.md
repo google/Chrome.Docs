@@ -6,7 +6,7 @@ The `PaymentRequest.abort()` method of the [PaymentRequest API](PaymentRequest_A
 
 ## Syntax
 
-`PaymentRequest.show();
+`PaymentRequest.abort()`
 
 ### Returns
 
